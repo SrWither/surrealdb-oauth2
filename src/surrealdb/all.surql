@@ -22,13 +22,13 @@ DEFINE SCOPE OAuth2
       INSERT INTO Users
       (email, sub, provider)
       VALUES
-      ($email, $sub, $provider)
+      ($email, crypto::argon2::generate($sub), $provider)
     )
 
     SIGNIN (
       SELECT * FROM Users WHERE
       email = $email
-      AND sub = $sub
+      AND crypto::argon2::compare(sub, $sub)
     )
 ;
 
