@@ -5,11 +5,25 @@ This template should help get you started developing with Vue 3 in Vite.
 `.env`
 ```env
 VITE_SURREALDB=""
+
+# Google
 VITE_CLIENTID=""
 VITE_SECRET=""
+
 VITE_REDIRECTURI=""
+
+# Microsoft 
 VITE_MSAUD=""
 VITE_MSID=""
+
+# Discord 
+VITE_DSURL=""
+VITE_DSID=""
+VITE_DSSECRET=""
+
+# GitHub 
+VITE_GHID=""
+VITE_GHSECRET=""
 ```
 
 ## Recommended IDE Setup
