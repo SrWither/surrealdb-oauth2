@@ -81,7 +81,7 @@ const handleGithub = async () => {
   const userData = await getGithubUser(access_token)
   console.log(userData)
   await handleOAuthData({
-    sub: userData.id,
+    sub: `${userData.id}`,
     email: userData.email,
     name: userData.name,
     picture: userData.avatar_url
@@ -179,4 +179,3 @@ const handleGithub = async () => {
     </div>
   </div>
 </template>
-@/api/oauth2/google

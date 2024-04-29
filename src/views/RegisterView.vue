@@ -200,4 +200,3 @@ const handleGithub = async () => {
     </div>
   </div>
 </template>
-@/api/oauth2/google
